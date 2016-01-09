@@ -36,15 +36,9 @@ var beam = new Beam();
 //and the streamer has a microphone too!
 var remap = {
     'A':'5',
-    'B':'6',
-// Start
-    '[':'7',
-//Select
-    ']':'8',
-    'I':'I',
-    'K':'K',
-    'J':'J'
-    //'L':'numpad 6'
+    'B':'6'
+// Start is mapped to [
+//Select is mapped to ]
 };
 
 function remapKey(code) {

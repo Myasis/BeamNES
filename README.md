@@ -1,4 +1,4 @@
-![logo](https://github.com/Myasis/BeamNES/blob/master/img/logo.png)
+![logo](https://github.com/Myasis/BeamNES/blob/BeamNES/img/logo.png)
 
 
 ** Beam Plays NES Games **
@@ -23,7 +23,7 @@ If you want to type things, you will have to stop it completely with CTRL-C
 ** Beam plays NES: **
 Setup the emulator mapping like this:
 
-![player controlls](https://github.com/Myasis/BeamNES/blob/master/img/BeamNES-Controls.png)
+![player controlls](https://github.com/Myasis/BeamNES/blob/BeamNES/img/BeamNES-Controls.png)
 
 ** Use **
 
@@ -36,4 +36,5 @@ Setup the emulator mapping like this:
 7. Make sure the emulator is in focus, which means, click on it so it is the active window. If anything else is active, the keystrokes will go there instead.
 
 ** Games Tested **
-We've tested 'Final Fantasy I'.
+Final Fantasy I
+Dragon Warrior

@@ -1,13 +1,13 @@
 ![logo](https://github.com/Myasis/BeamNES/blob/master/img/logo.png)
 
 
-** Beam Plays NES Games
+** Beam Plays NES Games **
 
 You have to download an emulator like: Nestopia.  You can find it on Google, not hard to find.
 You will also need the ROM file for the game you want to run.
 
-** Setup
-It's not that easy to setup. These are the steps you have to complete to get it to work.
+** Setup **
+These are the steps you have to complete to get it to work.
 
 0. Make sure to have Python 2.7.11 installed
 1. Get yourself [Nodejs](http://Nodejs.org) and Java
@@ -20,12 +20,12 @@ It's not that easy to setup. These are the steps you have to complete to get it 
 We use 'I', 'J', 'K', 'L' for directions. '[' for start, ']' for select. The 'A' & 'B' buttons will be 'A' & 'B'.
 If you want to type things, you will have to stop it completely with CTRL-C
 
-** Beam plays NES:
+** Beam plays NES: **
 Setup the emulator mapping like this:
 
 ![player controlls](https://github.com/Myasis/BeamNES/blob/master/img/BeamNES-Controls.png)
 
-** Use
+** Use **
 
 1. Launch the rom on the emulator.
 2. Set Beam to Interactive mode etc. (TODO: Once site is live)
@@ -35,5 +35,5 @@ Setup the emulator mapping like this:
 6. Leave the window open and it'll report button state changes.
 7. Make sure the emulator is in focus, which means, click on it so it is the active window. If anything else is active, the keystrokes will go there instead.
 
-** Games Tested
+** Games Tested **
 We've tested 'Final Fantasy I'.

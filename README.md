@@ -3,11 +3,8 @@
 
 ** Beam Plays NES Games
 
-Sega released a ton of Mega Drive/Genesis games into packs onto steam that are wrapped up into a nice official emulator.
-
-You have to download an emulator like: Nestopia.
-Download link: http://www.emulator-zone.com/doc.php/nes/nestopia.html
-You will also need to download the rom.
+You have to download an emulator like: Nestopia.  You can find it on Google, not hard to find.
+You will also need the ROM file for the game you want to run.
 
 ** Setup
 It's not that easy to setup. These are the steps you have to complete to get it to work.
@@ -17,12 +14,11 @@ It's not that easy to setup. These are the steps you have to complete to get it 
 2. Download this project as a zip file
 3. Unzip it.
 4. Open a terminal/cmd in its folder
-5. Enter npm install. This will install project dependancies
-6. Write a config file in config/ called default.json follow the default.sample.json for a guide.
-7. Open up your emulator and go to the keymapping!
+5. Write a config file in config/ called default.json follow the default.sample.json for a guide.
+6. Open up your emulator and go to the keymapping!
 
 We use 'I', 'J', 'K', 'L' for directions. '[' for start, ']' for select. The 'A' & 'B' buttons will be 'A' & 'B'.
-If you want to typ things, you will have to pause the node!
+If you want to type things, you will have to stop it completely with CTRL-C
 
 ** Beam plays NES:
 Setup the emulator mapping like this:
@@ -33,10 +29,11 @@ Setup the emulator mapping like this:
 
 1. Launch the rom on the emulator.
 2. Set Beam to Interactive mode etc. (TODO: Once site is live)
-3. Run the command prompt and move to your directory. Open up the index.js with `node index.js` or your Operating system's equivelant. 
-4. If you see 'Connected to beam' your all good and can start playing.
-5. If you see any messages or errors your setup may be incomplete or your config file may be missing or missconfigured. Refer to the default.sample.json config file to see how one should be layed out.
+3. Run the command prompt and move to your BeamNES directory. Run the bot with `node index.js` or your Operating system's equivelant. 
+4. If you see 'Connected to beam' you're all good and can start playing.
+5. If you see any messages or errors your setup may be incomplete or your config file may be missing or misconfigured. Refer to the default.sample.json config file to see how one should be layed out. (in the /config folder)
 6. Leave the window open and it'll report button state changes.
+7. Make sure the emulator is in focus, which means, click on it so it is the active window. If anything else is active, the keystrokes will go there instead.
 
 ** Games Tested
 We've tested 'Final Fantasy I'.

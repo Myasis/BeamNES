@@ -1,6 +1,6 @@
 /*        
             Derived from original work by
-                ProbablePrime (c) 2016
+                   ProbablePrime
 
     BeamNES created by MyasisDragon and Lennarddejong
 
@@ -35,10 +35,33 @@ var beam = new Beam();
 //That way the streamer can type in chat without 123129301293120392 appearing. However the interface allows you to toggle interactive mode
 //and the streamer has a microphone too!
 var remap = {
-    'A':'5',
-    'B':'6'
-// Start is mapped to [
-//Select is mapped to ]
+/*
+    Buttons A and B are mapped differently in case you wanted to type something into chat, you usually won't use 
+    the - and = keys
+
+    The left portion of the remappings 'A' are the keystokes coming from Beam.pro
+    The right portion of the remappings '=' are what is passed to the emulator
+*/
+
+    'A':'=',
+    'B':'-'
+ 
+
+/*
+
+    Start is mapped to [
+    Select is mapped to ]
+
+    Directionals are as follows:
+    UP = I
+    DOWN = K
+    LEFT = J
+    RIGHT = L
+
+    We cannot use the buttons W,A,S,D because the NES controller has an A button already
+    and would cause conflicts, so we moved the directionals for I,J,K,L 
+
+*/
 };
 
 function remapKey(code) {
@@ -97,14 +120,14 @@ function handleReport(report) {
     //the reports contain no data in the tactile/joystick array. So we detect if there's data
     //before attempting to process it
     if(report.tactile.length) {
-        recievingReports = true;
+        receivingReports = true;
         handleTactile(report.tactile,report.quorum);
     } else {
-        recievingReports = false;
+        receivingReports = false;
     }
 }
 
-var recievingReports = true;
+var receivingReports = true;
 /**
  * Watchdog gets called every 500ms to check the status of the reports coming into us from beam.
  * If we havent had any reports that contained usable data in (5 * 500ms)(2.5s) we clear all the
@@ -113,7 +136,7 @@ var recievingReports = true;
  * @return {[type]} [description]
  */
 function watchDog() {
-    if(!recievingReports) {
+    if(!receivingReports) {
         if(dogCount === 5) {
             console.log('clearing player input due to lack of reports.');
             setKeys(['I','A','B','L','UP','DOWN','LEFT','RIGHT'],false,true);

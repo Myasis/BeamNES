@@ -1,5 +1,7 @@
 ![logo](https://github.com/Myasis/BeamNES/blob/BeamNES/img/logo.png)
 
+** Disclaimer: There are NO ROMs or Emulators included with this package **
+
 
 ** Beam Plays NES Games **
 

@@ -27,7 +27,7 @@ If you want to typ things, you will have to pause the node!
 ** Beam plays NES:
 Setup the emulator mapping like this:
 
-![player controlls](Link to mapping)
+![player controlls](https://github.com/Myasis/BeamNES/blob/master/img/BeamNES-Controls.png)
 
 ** Use
 
